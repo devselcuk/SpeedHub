@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PartView" customModule="SpeedHub" customModuleProvider="target">
+            <connections>
+                <outlet property="bigImageView" destination="LJL-8K-Uys" id="3K4-18-kd7"/>
+                <outlet property="gpLabel" destination="C64-XG-cm4" id="SR7-ay-Dvu"/>
+                <outlet property="mainLabel" destination="GDd-iL-cqV" id="j4M-Hj-pYj"/>
+                <outlet property="secondLabel" destination="C64-XG-cm4" id="HBs-05-I62"/>
+                <outlet property="smallImageView" destination="Kj3-rr-F7g" id="eiM-PW-O4j"/>
+                <outlet property="thirdLabel" destination="V0X-x2-tem" id="U3f-sU-Tux"/>
+                <outlet property="titleLabel" destination="JIL-m8-6pv" id="oc7-3C-qfk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Race" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JIL-m8-6pv">
+                    <rect key="frame" x="4" y="48" width="66" height="17"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kj3-rr-F7g">
+                    <rect key="frame" x="74" y="48.5" width="20" height="19"/>
+                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="CVo-tA-Dwj"/>
+                        <constraint firstAttribute="width" constant="20" id="yvJ-h7-UJ8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russian Grand Prix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C64-XG-cm4">
+                    <rect key="frame" x="8" y="73" width="110" height="16"/>
+                    <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="X0X-Tn-FEe"/>
+                        <constraint firstAttribute="width" constant="110" id="uPS-2I-YEV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5G-U6-v3L">
+                    <rect key="frame" x="8" y="97" width="198" height="118"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LJL-8K-Uys">
+                            <rect key="frame" x="0.0" y="40.5" width="40" height="37"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="IlS-ag-eaz"/>
+                                <constraint firstAttribute="width" constant="40" id="ghC-Z4-dHu"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamilton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="GDd-iL-cqV">
+                            <rect key="frame" x="56" y="43" width="138" height="32.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINNER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-x2-tem">
+                            <rect key="frame" x="85" y="19" width="80" height="24"/>
+                            <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="0Dq-qm-zNX"/>
+                                <constraint firstAttribute="height" constant="24" id="3Il-Hi-LBK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="GDd-iL-cqV" firstAttribute="centerY" secondItem="T5G-U6-v3L" secondAttribute="centerY" id="7em-A1-5ul"/>
+                        <constraint firstItem="LJL-8K-Uys" firstAttribute="leading" secondItem="T5G-U6-v3L" secondAttribute="leading" id="A6G-ce-had"/>
+                        <constraint firstItem="V0X-x2-tem" firstAttribute="centerX" secondItem="GDd-iL-cqV" secondAttribute="centerX" id="AjE-bc-GVw"/>
+                        <constraint firstAttribute="trailing" secondItem="GDd-iL-cqV" secondAttribute="trailing" constant="4" id="HRd-N3-eao"/>
+                        <constraint firstItem="GDd-iL-cqV" firstAttribute="top" secondItem="V0X-x2-tem" secondAttribute="bottom" id="LFS-2C-VGu"/>
+                        <constraint firstItem="LJL-8K-Uys" firstAttribute="centerY" secondItem="T5G-U6-v3L" secondAttribute="centerY" id="quq-3l-kh3"/>
+                        <constraint firstItem="GDd-iL-cqV" firstAttribute="leading" secondItem="LJL-8K-Uys" secondAttribute="trailing" constant="16" id="tje-ct-RXP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="T5G-U6-v3L" firstAttribute="top" secondItem="C64-XG-cm4" secondAttribute="bottom" constant="8" symbolic="YES" id="5SK-Ux-aNG"/>
+                <constraint firstItem="C64-XG-cm4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="5qL-eH-hYU"/>
+                <constraint firstItem="C64-XG-cm4" firstAttribute="top" secondItem="JIL-m8-6pv" secondAttribute="bottom" constant="8" symbolic="YES" id="HTM-I6-j6z"/>
+                <constraint firstItem="Kj3-rr-F7g" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="HWE-4A-Za0"/>
+                <constraint firstItem="Kj3-rr-F7g" firstAttribute="leading" secondItem="JIL-m8-6pv" secondAttribute="trailing" constant="4" id="KQR-HG-nRj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T5G-U6-v3L" secondAttribute="bottom" constant="4" id="WoW-J6-phi"/>
+                <constraint firstItem="T5G-U6-v3L" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="YOn-iX-qD9"/>
+                <constraint firstItem="JIL-m8-6pv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="ZaS-dR-0od"/>
+                <constraint firstItem="JIL-m8-6pv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="bWs-bU-sRg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T5G-U6-v3L" secondAttribute="trailing" constant="8" id="lP7-I9-U3V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="44.927536231884062" y="91.40625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flag.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
